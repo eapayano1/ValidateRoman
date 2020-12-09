@@ -9,3 +9,10 @@ func TestArcaismoOrtografico(t *testing.T) {
 		t.Errorf("Fail: actual %t | expected: %t", actual, expected)
 	}
 }
+func TestCaracterMenorIgualtres(t *testing.T) {
+	actual := ValidarNumeroRomano("IIII")
+	expected := false
+	if actual != expected {
+		t.Errorf("Fail: actual %t | expected: %t", actual, expected)
+	}
+}
