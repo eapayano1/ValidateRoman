@@ -16,3 +16,10 @@ func TestValidarCaracterMayorTres(t *testing.T) {
 		t.Errorf("FAIL: actual: %t, expected: %t", actual, expected)
 	}
 }
+func TestValidarCaracterMenorUno(t *testing.T) {
+	actual := ValidarNumeroRomano("LL")
+	expected := false
+	if actual != expected {
+		t.Errorf("FAIL: actual: %t, expected: %t", actual, expected)
+	}
+}
