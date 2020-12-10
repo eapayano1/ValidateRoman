@@ -16,3 +16,10 @@ func TestValidarCaracterMayor3(t *testing.T) {
 		t.Errorf("FAIL: actual: %t, expected: %t", actual, expected)
 	}
 }
+func TestValidarCaracterMenor1(t *testing.T) {
+	actual := ValidarNumeroRomano("VV")
+	expected := false
+	if actual != expected {
+		t.Errorf("FAIL: actual: %t, expected: %t", actual, expected)
+	}
+}
